@@ -1,0 +1,1650 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Josefin Sans', sans-serif;
+background-color: #f1f2f6;
+}
+.icon img{
+width: 70px;
+max-height: 70px;
+margin-top: -30%;
+background:transparent;
+text-decoration: none;
+float: right;
+}
+
+.icons{
+ background:whitesmoke;
+text-decoration: none;
+color:#37474F;
+}
+.icons a{
+font-size:25px;
+transition: color 1s ease;
+color:black;
+}
+.icons a:hover{
+    color:rgb(73, 100, 223);
+}
+
+/*=======navbar=======*/
+.navbar{
+background:#e2f0f7;
+padding: 10px 20px;
+transition: padding 1s ease;
+position:absolute;
+width: 98%;   
+opacity: 0.9;
+}
+.navbar-brand h2{
+color: #4b4b4b;
+font-size: 30px;
+font-weight: bold;
+}
+.navbar-brand:hover{
+    color: rgb(102, 134, 209);
+}
+.navbar-toggler{
+padding: 3px;   
+}
+.line1, .line2, .line3{
+width: 23px;
+height: 3px;
+margin: 5px;
+background:black;
+transition:all 1s ease;
+outline:none;
+}
+.navbar-toggler{
+outline: none!important;
+}
+.nav-link{
+color:#ECEFF1;
+padding: 10px 20px;
+border-radius: 5px;
+transition: background 1s ease;
+}
+.nav-link:hover{
+background:#d6d6ee;
+color:#ECEFF1;
+}
+.nav-active{
+color:#ECEFF1;
+font-size:10px 20px;
+border-radius:5px;
+background: rgba(94, 94, 167, 0.322);
+transition: background 1s ease;
+}
+.nav-active:hover{
+background: rgb(223, 228, 240);
+}
+
+
+/*=======end of navbar=======*/
+
+/*=======Banner=======*/
+.banner{
+padding-top: 60px;
+background: linear-gradient(rgba(244, 244, 248, 0.733),rgba(148, 148, 170, 0.692)),
+url('C:/Users/hp/Desktop/Ormaechea-maçonnerie/images/pexels-expect-best-323781.jpg')no-repeat fixed 50% 50%;
+background-size:cover;
+justify-content: center;
+align-items:center;
+height: 799px;
+}
+.heading{
+text-align:center;
+color:white;
+}
+.heading h1{
+font-weight: bold;
+font-size:70px;
+}
+.heading p{
+font-size:55px;
+}
+.btn-main{
+background:#fff;
+color:#ECEFF1;
+border-radius:10px 20px;
+}
+.btn-main{
+display: inline-block;
+vertical-align: middle;
+transform:perspective(1px) translateZ(0);
+box-shadow:0 0 1px rgba(0,0,0,0);
+transition-duration:0.3s;
+transition-property:transform;
+transform-origin:0 100%;
+}
+.btn-main:hover, .btn-main:focus, .btn-main:active{
+transform:skew(-10deg);
+color:#37474F;
+font-weight:bold;
+}
+
+/*=======end of banner=======*/
+
+/*=======About us section=======*/
+.about h1{
+ top:-30px;
+}
+.about h5{
+font-size: 16px;
+color:black;
+    
+}
+.about .title-border{
+content: "";
+width:50%;
+height: 10px;
+display: block;
+background: block;
+background: #010101;
+border-radius: 50%;
+margin:1%;
+margin-left:35%;
+}
+
+.about p{
+font-size:18px;
+color:#01012e;
+}
+
+.icon{
+color:#01012e; 
+font-size: 50px;
+}
+/*=======End about us section=======*/
+
+/*======= Slider=======*/
+
+.slider{
+min-height: 10vh;
+display: grid;
+place-items: center;
+}
+
+.slider{
+height: 300px;
+margin:auto;
+position: relative;
+width: 90%;
+display: grid;
+place-items: center;
+overflow: hidden;
+}
+
+.slide-track{
+    display: flex;
+    width: calc(250px *18);
+    animation: scroll 60s linear infinite;
+}
+
+.slide-track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-200px *18));
+    }
+}
+
+.slide{
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+img{
+    width: 100%;
+    transition: transform 1s;
+}
+
+img:hover{
+    transform: translateZ(20px);
+    
+    text-decoration: none;
+}
+
+/*=======End slider=======*/
+
+/*=======Gradient shadows=======*/
+
+.slider::before,
+.slider::after{
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,
+    rgba(255,255,255,0) 100%);
+    content:"";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before{
+    left:0;
+    top:0;
+}
+
+.slider::after{
+    right:0;
+    top:0;
+    transform: rotatez (180deg);
+}
+
+.slide-btn{
+    position: absolute;
+    top:65%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color:whitesmoke;
+    font-size: 20px;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: left;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    transform:skew(-10deg);
+    color:black;
+    font-weight:bold; 
+    text-decoration: none;  
+}
+
+.ul{
+    list-style: none;
+}
+
+.a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.container h3{
+    font-size: 40px;
+}
+
+.text-container{
+    font-family: releway;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.75;
+    text-align: center;
+}
+
+/*======= Skew container =======*/
+.skew .container{
+    width: 100%;
+    padding-top:70px;
+    padding-bottom: 70px;
+  }
+
+  .skew{
+    position: relative;
+    bottom: 70px;
+  }
+
+  .skew .skew-image{
+    position: absolute;
+    width:55%;
+    right: 0;
+    top:5%;
+    bottom:5%;
+    background-image:url("C:/Users/hp/Desktop/Ormaechea-maçonnerie/images/pexels-anete-lusina-4792479.jpg");
+    background-size:cover;
+    background-position: right 33%;
+  }
+
+  .skew .skew-wrapper{
+    position:relative;
+  }
+
+  .skew .skew-wrapper .min200{
+    min-height: 200px;
+  }
+
+  .skew .skew-wrapper .min300{
+    min-height: 300px;
+  }
+
+  .skew .skew-wrapper .min400{
+    min-height: 400px;
+  }
+  .skew .skew-content-bg{
+    position: absolute;
+    height: 100%;
+    top:0%;
+    left: -30px;
+    right: -20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0;
+    background-color:#dba827;
+    background-position: center left;
+    transform: skew(-6deg, 0deg);
+  }
+
+  .skew .skew-content{
+    position: relative;
+    font-size: 1.4rem;
+    color:white;
+    padding: 30px 20px;
+    
+  }
+  
+  .skew.container.btn{
+    border: 2px solid black;
+    border-radius: 0px;
+    background-color: none;
+    color: black;
+    padding: 10px 22px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+   .btn-white{
+    border-color: white;
+    color:white;
+  }
+
+   .btn-white:hover{
+    background-color:white;
+  }
+
+/*======= End Skew container =======*/
+
+/*======= service-text =======*/
+.services-text .about .h1{
+    top:10%;
+    bottom: 40%;
+}
+
+/*======= End Service-text =======*/
+
+/*======= Service Section =======*/
+
+ .services {
+     content:"";
+     width: 100%;
+     padding: 70px 10px;
+     height: 2px;
+     display: block;
+     background: block;
+     background-color: black;
+     border-radius: 50%;
+     margin:1%;
+     padding: 50px 60px;
+     top:20%;
+     bottom: 70%;
+     
+ }
+ .service-pic img{
+     width: 100%;
+ }
+ .service-inner-wrapper{
+     padding-top: 5px;
+     padding-bottom: 10px;
+ }
+ .left-service-item{
+     position: relative;
+     padding-right: 90px;
+     margin-bottom: 65px;
+     text-align: right;
+     margin-top:35px ;
+ }
+ .left-icon{
+     position: absolute;
+     right: 0;
+     top: -8px;
+     color:black;
+     width: 90px;
+     height: 90px;
+     text-align: center;
+ }
+ .left-service-item h3{
+     text-transform: uppercase;
+     font-size: 25px;
+     font-weight: 700;
+     margin-bottom: 21px;
+     color:black;
+ }
+ .left-service-item p{
+     color:black;
+     font-size: 18px;
+     font-weight: 300;
+     line-height: 25px;
+ }
+.right-service-item{
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 65px;
+    margin-top: 35px;
+    text-align: left;
+}
+.right-icon{
+    position: absolute;
+    left:0;
+    top:-8px;
+    color:black;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+.right-service-item h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 21px;
+    color: black;
+}
+.right-service-item p{
+    color:black;
+   font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+}
+/*======= End Service Section =======*/
+
+/*======= Box-4=======*/
+.box4{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin:0% ;
+    background: rgb(223, 228, 240);
+}
+/*======= end Bonx-4=======*/
+
+
+
+/* --------RESPONSIVE-------- */
+/* --------RESPONSIVE-------- */
+/* Smartphones (portrait) ---------------- */
+@media only screen 
+and (max-width : 320px)
+{
+/* header Section */
+.body{
+padding-left: 20px;
+padding-right: 20px;
+font-family: 'Josefin Sans', sans-serif;
+background-color: #f1f2f6;
+}
+.icon img{
+width: 23px;
+height: 18px;
+margin-top: -20px;
+}
+.icons{
+font-size: 1em;   
+}
+.icons a{
+font-size: 1em;
+}
+.icons a:hover{
+color:rgb(73, 100, 223);
+}
+
+/*=======navbar=======*/  
+.navbar{
+background:#e2f0f7;
+padding: 5px 5px;
+transition: padding 2s ease;
+position:absolute;
+width: 81%;   
+opacity: 0.9;
+}
+.navbar{
+margin-top: -5px;
+height:auto;
+}
+.navbar h2{
+font-size: 11px;
+}
+.navbar-brand{
+font-size: 5px;
+margin-right: 5px;   
+}
+.navbar-brand:hover{
+color: rgb(102, 134, 209);
+}
+.navbar-toggler{
+padding: 3px;   
+}
+.line1, .line2, .line3{
+width: 22px;
+height: 3px;
+margin: 4px;
+background:black;
+transition:all 1s ease;
+outline:none;
+}
+.navbar-toggler{
+outline: none!important;
+}
+.nav-link{
+color:#ECEFF1;
+padding: 1px 1px;
+border-radius: 5px;
+transition: background 1s ease;
+}
+.nav-link:hover{
+background: #d6d6ee;
+color:#ECEFF1;
+}
+.nav-active{
+color:#ECEFF1;
+font-size:5px 5px;
+border-radius:5px;
+background: rgba(94, 94, 167, 0.322);
+transition: background 1s ease;
+}
+.nav-active:hover{
+background: rgb(223, 228, 240);
+}
+.navbar-collapse{
+top: 70px;
+}
+ 
+/*=======Banner=======*/
+.banner{
+padding-top: 0px;
+background: linear-gradient(rgba(244, 244, 248, 0.733),rgba(148, 148, 170, 0.692)),
+url('C:/Users/hp/Desktop/Ormaechea-maçonnerie/images/pexels-expect-best-323781.jpg')no-repeat fixed 60% 60%;
+background-size:cover;
+justify-content: center;
+align-items:center;
+height: 350px;
+}
+.heading{
+text-align:center;
+color:white;
+}
+.heading h1{
+font-size:30px;
+font-weight: bold;
+}
+.heading p{
+font-size:20px;
+}
+.btn-main{
+background:#fff;
+color:#ECEFF1;
+border-radius:10px 20px;
+}
+.btn-main{
+display: inline-block;
+vertical-align: middle;
+transform:perspective(1px) translateZ(0);
+box-shadow:0 0 1px rgba(0,0,0,0);
+transition-duration:0.3s;
+transition-property:transform;
+transform-origin:0 100%;
+}
+.btn-main:hover, .btn-main:focus, .btn-main:active{
+transform:skew(-10deg);
+color:#37474F;
+font-weight:bold;
+}
+/*=======About us section=======*/
+.about h1{
+top:-30px;
+font-size: 25px;
+font-weight: 600;
+   }
+.about h2{
+top: 30px;
+font-size: 20px;
+}
+.about h5{
+font-size: 13px;
+color:black;
+}
+.about .title-border{
+content: "";
+width:30%;
+height: 10px;
+display: block;
+background: block;
+background: #010101;
+border-radius: 50%;
+margin:1%;
+margin-left:35%;
+}
+.about p{
+font-size:12px;
+color:#01012e;
+}
+.icon{
+color:#01012e; 
+font-size: 20px;
+}
+/*======= Slider=======*/
+
+.slider{
+min-height: 5vh;
+display: grid;
+place-items: center;
+}
+.slider{
+height: 250px;
+margin:auto;
+position: relative;
+width: 70%;
+display: grid;
+place-items: center;
+overflow: hidden;
+}
+.slide-track{
+display: flex;
+width: calc(250px *18);
+animation: scroll 60s linear infinite;
+}
+
+.slide-track:hover{
+animation-play-state: paused;
+}
+@keyframes scroll{
+0%{
+    transform: translateX(0);
+}
+100%{
+transform: translateX(calc(-200px *18));
+    }
+}
+.slide{
+height: 250px;
+width: 200px;
+display: flex;
+align-items: center;
+padding: 15px;
+perspective: 100px;
+}
+img{
+width: 100%;
+transition: transform 1s;
+}
+
+img:hover{
+transform: translateZ(20px);    
+text-decoration: none;
+}
+/*=======Gradient shadows=======*/
+
+.slider::before,
+.slider::after{
+background: linear-gradient(to right, rgba(255,255,255,1) 0%,
+    rgba(255,255,255,0) 100%);
+content:"";
+height: 100%;
+position: absolute;
+width: 10%;
+z-index: 2;
+}
+
+.slider::before{
+left:0;
+top:0;
+}
+
+.slider::after{
+right:0;
+top:0;
+transform: rotatez (180deg);
+}
+
+.slide-btn{
+position: absolute;
+top:55%;
+left:50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+color:whitesmoke;
+font-size: 20px;
+padding: 10px 40px;
+border: none;
+cursor: pointer;
+border-radius: 10px;
+text-align: left;
+text-decoration: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-transform: uppercase;
+}
+
+.btn:hover{
+transform:skew(-10deg);
+color:black;
+font-weight:bold; 
+text-decoration: none;  
+}
+
+.ul{
+list-style: none;
+}
+
+.a {
+text-decoration: none;
+text-align: center;
+}
+
+.container h3{
+font-size: 25px;
+font-weight: 600;
+}
+
+.text-container{
+font-family: releway;
+font-size: 25px;
+font-weight: 400;
+line-height: 1.75;
+text-align: center;
+}
+/*======= Skew container =======*/
+.skew .container{
+width: 100%;
+padding-top:60px;
+padding-bottom: 60px;
+}
+.skew{
+position: relative;
+bottom: 70px;
+}
+.skew .skew-image{
+position: absolute;
+width:60%;
+right: 0;
+top:1%;
+bottom:61%;
+background-image:url("C:/Users/hp/Desktop/Ormaechea-maçonnerie/images/pexels-anete-lusina-4792479.jpg");
+background-size:cover;
+background-position: right 13%;
+}
+
+.skew .skew-wrapper{
+position:relative;
+}
+.skew .skew-wrapper .min200{
+min-height: 200px;
+}
+.skew .skew-wrapper .min300{
+min-height: 300px;
+}
+.skew .skew-wrapper .min400{
+min-height: 400px;
+}
+.skew .skew-content-bg{
+position: absolute;
+height: 40%;
+top:0%;
+left: -90px;
+right: -70px;
+box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0;
+background-color:#dba827;
+background-position: center left;
+transform: skew(-8deg, 0deg);
+}
+
+.skew .skew-content {
+position: relative;
+font-size: 12rem;
+color:white;
+padding: 30px 20px; 
+margin-top: -35px;
+}
+.skew-content h1{
+font-style: 5px;
+}
+
+.skew.container.btn{
+border: 2px solid black;
+border-radius: 0px;
+background-color: none;
+color: black;
+padding: 10px 15px;
+font-size: 10px;
+cursor: pointer;
+}
+.btn-white{
+border-color: white;
+color:white;
+margin-top: -355px;
+}
+
+.btn-white:hover{
+background-color:white;
+}
+.services-text h1{
+margin-top: -130px;
+}
+.left-service-item h3{
+font-size: 16px;
+margin-top: -40px;
+}
+.service-pic img{
+width: 60%;
+}
+.right-service-item h3{
+font-size: 10px;
+margin-top: -10px;
+margin-bottom: 30px;
+}
+.box4{
+margin-top: -50px;
+height: 60px;
+}
+.footer H5{
+font-size: 12PX;
+}
+ }
+
+/* Smartphones (landscape) ---------------- */
+@media only screen 
+and (min-width : 321px)
+and (max-width : 767px)
+{
+/* header Section */
+.body{
+padding-left: 10px;
+padding-right: 10px;
+font-family: 'Josefin Sans', sans-serif;
+background-color: #f1f2f6;
+}
+.icon img{
+width: 25px;
+height: 20px;
+margin-top: -20px;
+}
+.icons{
+font-size: 1em;   
+}
+.icons a{
+font-size: 1em;
+}
+.icons a:hover{
+color:rgb(73, 100, 223);
+}
+    
+/*=======navbar=======*/  
+.navbar{
+background:#e2f0f7;
+padding: 5px 5px;
+transition: padding 2s ease;
+position:absolute;
+width: 91%;   
+opacity: 0.9;
+}
+.navbar{
+margin-top: -5px;
+height:auto;
+}
+.navbar h2{
+font-size: 12px;
+}
+.navbar-brand{
+font-size: 5px;
+margin-right: 5px;   
+}
+.navbar-brand:hover{
+color: rgb(102, 134, 209);
+}
+.navbar-toggler{
+padding: 3px;   
+}
+
+.line1, .line2, .line3{
+width: 22px;
+height: 3px;
+margin: 5px;
+background:black;
+transition:all 1s ease;
+outline:none;
+}
+.navbar-toggler{
+outline: none!important;
+}
+.nav-link{
+color:#ECEFF1;
+padding: 1px 1px;
+border-radius: 5px;
+transition: background 1s ease;
+}
+.nav-link:hover{
+background: #d6d6ee;
+color:#ECEFF1;
+}
+.nav-active{
+color:#ECEFF1;
+font-size:5px 5px;
+border-radius:5px;
+background: rgba(94, 94, 167, 0.322);
+transition: background 1s ease;
+}
+.nav-active:hover{
+background: rgb(223, 228, 240);
+}
+.navbar-collapse{
+top: 70px;
+font-size: 12px;
+}
+     
+    /*=======Banner=======*/
+.banner{
+padding-top: 0px;
+background: linear-gradient(rgba(244, 244, 248, 0.733),rgba(148, 148, 170, 0.692)),
+url('C:/Users/hp/Desktop/Ormaechea-maçonnerie/images/pexels-expect-best-323781.jpg')no-repeat fixed 60% 60%;
+background-size:cover;
+justify-content: center;
+align-items:center;
+height: 350px;
+}
+.heading{
+text-align:center;
+color:white;
+}
+.heading h1{
+font-size:25px;
+font-weight: bold;
+   
+}
+.heading p{
+font-size:20px;
+}
+.btn-main{
+background:#fff;
+color:#ECEFF1;
+border-radius:10px 20px;
+}
+.btn-main{
+display: inline-block;
+vertical-align: middle;
+transform:perspective(1px) translateZ(0);
+box-shadow:0 0 1px rgba(0,0,0,0);
+transition-duration:0.3s;
+transition-property:transform;
+transform-origin:0 100%;
+}
+.btn-main:hover, .btn-main:focus, .btn-main:active{
+transform:skew(-10deg);
+color:#37474F;
+font-weight:bold;
+}
+    /*=======About us section=======*/
+.about h1{
+top:-30px;
+font-size: 25px;
+font-weight: 600;
+}
+.about h2{
+top: 30px;
+font-size: 20px;
+}
+.about h5{
+font-size: 13px;
+color:black;
+}
+.about .title-border{
+content: "";
+width:30%;
+height: 10px;
+display: block;
+background: block;
+background: #010101;
+border-radius: 50%;
+margin:1%;
+margin-left:35%;
+}
+.about p{
+font-size:12px;
+color:#01012e;
+}
+.icon{
+color:#01012e; 
+font-size: 20px;
+}
+    /*======= Slider=======*/
+    
+.slider{
+min-height: 5vh;
+display: grid;
+place-items: center;
+}
+.slider{
+height: 250px;
+margin:auto;
+position: relative;
+width: 70%;
+display: grid;
+place-items: center;
+overflow: hidden;
+}
+.slide-track{
+display: flex;
+width: calc(250px *18);
+animation: scroll 60s linear infinite;
+}
+    
+.slide-track:hover{
+animation-play-state: paused;
+}
+@keyframes scroll{
+0%{
+    transform: translateX(0);
+    }
+    100%{
+    transform: translateX(calc(-200px *18));
+    }
+}
+.slide{
+height: 250px;
+width: 200px;
+display: flex;
+align-items: center;
+padding: 15px;
+perspective: 100px;
+}
+img{
+width: 100%;
+transition: transform 1s;
+}
+    
+img:hover{
+transform: translateZ(20px);    
+text-decoration: none;
+}
+    /*=======Gradient shadows=======*/
+    
+.slider::before,
+.slider::after{
+background: linear-gradient(to right, rgba(255,255,255,1) 0%,
+ rgba(255,255,255,0) 100%);
+content:"";
+height: 100%;
+position: absolute;
+width: 10%;
+z-index: 2;
+}
+    
+.slider::before{
+left:0;
+top:0;
+}
+    
+.slider::after{
+right:0;
+top:0;
+transform: rotatez (180deg);
+}
+    
+.slide-btn{
+position: absolute;
+top:55%;
+left:50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+color:whitesmoke;
+font-size: 20px;
+padding: 10px 40px;
+border: none;
+cursor: pointer;
+border-radius: 10px;
+text-align: left;
+text-decoration: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-transform: uppercase;
+}
+    
+.btn:hover{
+transform:skew(-10deg);
+color:black;
+font-weight:bold; 
+text-decoration: none;  
+}
+    
+.ul{
+list-style: none;
+}
+    
+.a {
+text-decoration: none;
+text-align: center;
+}
+    
+.container h3{
+font-size: 25px;
+font-weight: 600;
+}
+    
+.text-container{
+font-family: releway;
+font-size: 25px;
+font-weight: 400;
+line-height: 1.75;
+text-align: center;
+}
+    /*======= Skew container =======*/
+.skew .container{
+width: 50%;
+padding-top:20px;
+padding-bottom: 60px;
+}
+.skew{
+position: relative;
+margin-top: 20px;
+margin-bottom: -190px;
+}
+.skew .skew-image{
+position: absolute;
+height: 23%;
+width:100%;
+right: 0;
+top:5%;
+bottom:61%;
+background-image:url("C:/Users/hp/Desktop/Ormaechea-maçonnerie/images/pexels-anete-lusina-4792479.jpg");
+background-size:cover;
+background-position: right 13%;
+}
+    
+.skew .skew-wrapper{
+position:relative;
+}
+.skew .skew-wrapper .min200{
+min-height: 200px;
+}
+.skew .skew-wrapper .min300{
+min-height: 300px;
+}
+.skew .skew-wrapper .min400{
+min-height: 400px;
+}
+.skew .skew-content-bg{
+position: absolute;
+height: 25%;
+margin: 5%;
+top:0%;
+left: -35px;
+right: 60px;
+box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0;
+background-color:#dba827;
+background-position: center left;
+transform: skew(-8deg, 0deg);
+}
+    
+.skew .skew-content {
+position: relative;
+font-size: 15rem;
+color:white;
+padding: 15px 15px; 
+margin-top: 15px;
+}
+.skew-content h1{
+font-style: 5px;
+font-size: 20px;
+}
+    
+.skew.container.btn{
+border: 2px solid black;
+border-radius: 0px;
+background-color: none;
+color: black;
+padding: 10px 10px;
+font-size: 10px;
+cursor: pointer;
+}
+.btn-white{
+border-color: white;
+color:white;
+margin-top: -360px;
+}  
+.btn-white:hover{
+background-color:white;
+}
+
+/*======= service-text =======*/
+
+.services-text h1{
+margin-top:20%;
+}
+.left-service-item h3{
+font-size: 16px;
+margin-top: -10px;
+margin-bottom: 30px;
+}
+.service-pic img{
+height: 50%;
+
+}
+.right-service-item h3{
+font-size: 16px;
+margin-top: -10px;
+margin-bottom: 30px;
+}
+.box4{ 
+position: relative;
+width: 105%;
+height: 90px;
+margin-top:1em;
+margin-bottom: 1em;
+background: rgb(223, 228, 240);
+    }
+.footer H5{
+font-size: 12PX;
+} 
+ }
+
+/* Tablets (portrait) -------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+{
+/* header Section */
+.body{
+padding-left: 20px;
+padding-right: 20px;
+font-family: 'Josefin Sans', sans-serif;
+background-color: #f1f2f6;
+}
+.icon img{
+width: 25px;
+height: 18px;
+margin-top: -20px;
+}
+.icons{
+font-size: 1em;   
+}
+.icons a{
+font-size: 1em;
+}
+.icons a:hover{
+color:rgb(73, 100, 223);
+}
+/*=======navbar=======*/  
+.navbar{
+background:#e2f0f7;
+padding: 5px 5px;
+transition: padding 2s ease;
+position:absolute;
+width: 100%;   
+opacity: 0.9;
+}
+.navbar{
+margin-top: -5px;
+height:auto;
+}
+.navbar h2{
+font-size: 11px;
+}
+.navbar-brand{
+font-size: 5px;
+margin-right: 5px;   
+}
+.navbar-brand:hover{
+color: rgb(102, 134, 209);
+}
+.navbar-toggler{
+padding: 3px;   
+}
+.line1, .line2, .line3{
+width: 22px;
+height: 3px;
+margin: 4px;
+background:black;
+transition:all 1s ease;
+outline:none;
+}
+.navbar-toggler{
+outline: none!important;
+}
+.nav-link{
+color:#ECEFF1;
+padding: 1px 1px;
+border-radius: 5px;
+transition: background 1s ease;
+}
+.nav-link:hover{
+background: #d6d6ee;
+color:#ECEFF1;
+}
+.nav-active{
+color:#ECEFF1;
+font-size:5px 5px;
+border-radius:5px;
+background: rgba(94, 94, 167, 0.322);
+transition: background 1s ease;
+}
+.nav-active:hover{
+background: rgb(223, 228, 240);
+}
+.navbar-collapse{
+top: 70px;
+}
+     
+    /*=======Banner=======*/
+.banner{
+padding-top: 0px;
+background: linear-gradient(rgba(244, 244, 248, 0.733),rgba(148, 148, 170, 0.692)),
+url('C:/Users/hp/Desktop/Ormaechea-maçonnerie/images/pexels-expect-best-323781.jpg')no-repeat fixed 60% 60%;
+background-size:cover;
+justify-content: center;
+align-items:center;
+height: 350px;
+}
+.heading{
+text-align:center;
+color:white;
+}
+.heading h1{
+font-size:30px;
+font-weight: bold;
+}
+.heading p{
+font-size:20px;
+}
+.btn-main{
+background:#fff;
+color:#ECEFF1;
+border-radius:10px 20px;
+}
+.btn-main{
+display: inline-block;
+vertical-align: middle;
+transform:perspective(1px) translateZ(0);
+box-shadow:0 0 1px rgba(0,0,0,0);
+transition-duration:0.3s;
+transition-property:transform;
+transform-origin:0 100%;
+}
+.btn-main:hover, .btn-main:focus, .btn-main:active{
+transform:skew(-10deg);
+color:#37474F;
+font-weight:bold;
+}
+    /*=======About us section=======*/
+    .about h1{
+    top:-30px;
+    font-size: 25px;
+    font-weight: 600;
+       }
+    .about h2{
+    top: 30px;
+    font-size: 20px;
+    }
+    .about h5{
+    font-size: 13px;
+    color:black;
+    }
+    .about .title-border{
+    content: "";
+    width:30%;
+    height: 10px;
+    display: block;
+    background: block;
+    background: #010101;
+    border-radius: 50%;
+    margin:1%;
+    margin-left:35%;
+    }
+    .about p{
+    font-size:12px;
+    color:#01012e;
+    }
+    .icon{
+    color:#01012e; 
+    font-size: 20px;
+    }
+    /*======= Slider=======*/
+    
+    .slider{
+    min-height: 5vh;
+    display: grid;
+    place-items: center;
+    }
+    .slider{
+    height: 250px;
+    margin:auto;
+    position: relative;
+    width: 70%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    }
+    .slide-track{
+    display: flex;
+    width: calc(250px *18);
+    animation: scroll 60s linear infinite;
+    }
+    
+    .slide-track:hover{
+    animation-play-state: paused;
+    }
+    @keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+    transform: translateX(calc(-200px *18));
+        }
+    }
+    .slide{
+    height: 250px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+    }
+    img{
+    width: 100%;
+    transition: transform 1s;
+    }
+    
+    img:hover{
+    transform: translateZ(20px);    
+    text-decoration: none;
+    }
+    /*=======Gradient shadows=======*/
+    
+    .slider::before,
+    .slider::after{
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,
+        rgba(255,255,255,0) 100%);
+    content:"";
+    height: 100%;
+    position: absolute;
+    width: 10%;
+    z-index: 2;
+    }
+    
+    .slider::before{
+    left:0;
+    top:0;
+    }
+    
+    .slider::after{
+    right:0;
+    top:0;
+    transform: rotatez (180deg);
+    }
+    
+    .slide-btn{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color:whitesmoke;
+    font-size: 20px;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: left;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    }
+    
+    .btn:hover{
+    transform:skew(-10deg);
+    color:black;
+    font-weight:bold; 
+    text-decoration: none;  
+    }
+    
+    .ul{
+    list-style: none;
+    }
+    
+    .a {
+    text-decoration: none;
+    text-align: center;
+    }
+    
+    .container h3{
+    font-size: 25px;
+    font-weight: 600;
+    }
+    
+    .text-container{
+    font-family: releway;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.75;
+    text-align: center;
+    }
+    /*======= Skew container =======*/
+    .skew .container{
+    width: 100%;
+    padding-top:60px;
+    padding-bottom: 60px;
+    }
+    .skew{
+    position: relative;
+    bottom: 70px;
+    }
+    .skew .skew-image{
+    position: absolute;
+    width:60%;
+    right: 0;
+    top:1%;
+    bottom:61%;
+    background-image:url("C:/Users/hp/Desktop/Ormaechea-maçonnerie/images/pexels-anete-lusina-4792479.jpg");
+    background-size:cover;
+    background-position: right 13%;
+    }
+    
+    .skew .skew-wrapper{
+    position:relative;
+    }
+    .skew .skew-wrapper .min200{
+    min-height: 200px;
+    }
+    .skew .skew-wrapper .min300{
+    min-height: 300px;
+    }
+    .skew .skew-wrapper .min400{
+    min-height: 400px;
+    }
+    .skew .skew-content-bg{
+    position: absolute;
+    height: 40%;
+    top:0%;
+    left: -90px;
+    right: -70px;
+    box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0;
+    background-color:#dba827;
+    background-position: center left;
+    transform: skew(-8deg, 0deg);
+    }
+    
+    .skew .skew-content {
+    position: relative;
+    font-size: 12rem;
+    color:white;
+    padding: 30px 20px; 
+    margin-top: -35px;
+    }
+    .skew-content h1{
+    font-style: 5px;
+    }
+    
+    .skew.container.btn{
+    border: 2px solid black;
+    border-radius: 0px;
+    background-color: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    }
+    .btn-white{
+    border-color: white;
+    color:white;
+    margin-top: -355px;
+    }
+    
+    .btn-white:hover{
+    background-color:pink;
+    }
+    .services-text h1{
+    margin-top: -130px;
+    }
+    .left-service-item h3{
+    font-size: 16px;
+    margin-top: -40px;
+    }
+    .service-pic img{
+    width: 60%;
+    }
+    .right-service-item h3{
+    font-size: 10px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    }
+    .box4{
+    margin-top: -50px;
+    height: 60px;
+    }
+    .footer H5{
+    font-size: 12PX;
+    }
+}
+
+
+/* Tablets (landscape) ------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+{   
+/* Add Your CSS Styling Here */
+}
+
+/* Old Desktops and laptops ------------------ */
+@media only screen 
+and (min-width : 1025px) 
+{
+/* Add Your CSS Styling Here */
+}
+
+/* Desktops ------------------ */
+@media only screen 
+and (min-width : 1201px) 
+{
+/* Add Your CSS Styling Here */
+}

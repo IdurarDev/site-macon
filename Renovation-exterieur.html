@@ -1,0 +1,93 @@
+<!Doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Rénovation extérieur</title>
+<link rel="stylesheet" href="css\Rénovation-exterieur.css">
+</head>
+
+ <body>
+<!--image slider strat-->    
+<div class="slider">
+<div class="slides">
+<!--radio buttons start-->
+<input type="radio" name="radio-btn" id="radio1">
+<input type="radio" name="radio-btn" id="radio2">
+<input type="radio" name="radio-btn" id="radio3">
+<input type="radio" name="radio-btn" id="radio4">
+<input type="radio" name="radio-btn" id="radio5">
+<input type="radio" name="radio-btn" id="radio6">
+<input type="radio" name="radio-btn" id="radio7">
+<!--radio buttons end-->
+
+<!--slide images start-->
+<div class="slide first">
+<img src="images\renovation-exterieur\IMG_20191106_103235.jpg" alt="">
+</div>  
+
+<div class="slide">
+<img src="images\renovation-exterieur\IMG_20200605_173545.jpg" alt="">
+</div>
+
+<div class="slide">
+<img src="images\renovation-exterieur\IMG_20200612_163025.jpg" alt="">
+</div>
+
+<div class="slide">
+<img src="images\renovation-exterieur\IMG_20200619_164248.jpg" alt="">
+</div>
+
+<div class="slide">
+<img src="images\renovation-exterieur\IMG_20200619_164307.jpg" alt="">
+</div>
+    
+<div class="slide">
+<img src="images\renovation-exterieur\IMG_20200713_153349.jpg" alt="">
+</div>
+    
+<div class="slide">
+<img src="images\renovation-exterieur\IMG_20200713_153423.jpg" alt="">
+</div>
+              
+<!--slide images end-->
+
+<!--automatic navigation start-->
+<div class="navigation-auto">
+<div class="auto-btn1"></div>
+<div class="auto-btn2"></div>
+<div class="auto-btn3"></div>
+<div class="auto-btn4"></div>
+<div class="auto-btn5"></div>
+<div class="auto-btn6"></div>
+<div class="auto-btn7"></div>
+</div>
+<!--automatic navigation end-->
+</div>
+
+<!--manual navigation start-->
+<div class="navigation-manual">
+<label for="radio1"class="manual-btn"></label>
+<label for="radio2"class="manual-btn"></label>
+<label for="radio3"class="manual-btn"></label>
+<label for="radio4"class="manual-btn"></label>
+<label for="radio5"class="manual-btn"></label>
+<label for="radio6"class="manual-btn"></label>
+<label for="radio7"class="manual-btn"></label>
+</div>
+<!--manual navigation end-->
+</div>
+<!--image slider end-->
+
+<script type="text/javascript">
+var counter = 1;
+setInterval(function(){
+document.getElementById('radio'+ counter).checked = true;
+counter++;
+if(counter > 7){
+counter = 1;
+ }
+},3000);
+</script>
+</body>
+</html>
+
